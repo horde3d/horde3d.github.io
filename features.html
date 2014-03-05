@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Horde3D - Next-Generation Graphics Engine</title>
+    <link rel="stylesheet" type="text/css" href="css/StyleSheet1.css" title="ALL" media="screen,projection" />
+</head>
+<body>
+    <div style="display: none">
+        <h1>
+            Horde3D - Next-Generation Graphics Engine</h1>
+    </div>
+    <div id="mainmenu">
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li class="marked"><a href="features.html">Features</a></li>
+            <li><a href="screenshots.html">Screenshots</a></li>
+            <li><a href="license.html">License</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="docs/html/_faq.html" target="_blank">FAQ</a></li>
+            <li><a href="docs/html/_tutorial.html" target="_blank">Tutorial</a></li>
+            <li><a href="/forums" target="_blank">Forums</a></li>
+			<li><a href="/wiki" target="_blank">Wiki</a></li>
+        </ul>
+        <a href="http://mm-werkstatt.informatik.uni-augsburg.de" target="_blank"><img src="images/uni.gif" style="margin-left: 10px; margin-top: 20px; border:none"/></a>
+    </div>
+    
+    <div id="content">
+        <h2>
+            Horde3D Features</h2>
+		<br /><br />
+        <h3>
+            General Features</h3>
+        <ul>
+            <li>Powerful graphics engine designed to meet the requirements of next-generation games</li>
+            <li>Modern shader-based architecture with SM 2.0 compatible hardware as a minimum requirement</li>
+			<li>Cross-platform compatible by using OpenGL as rendering API</li>
+            <li>Elegant and lightweight overall design with very few dependencies, avoiding complexity where possible</li>
+            <li>Clean object-oriented C++ code written for performance</li>
+            <li>Strong modularity and high abstraction through flat C-style DLL API (also makes it possible to use Horde3D from virtually any programming language)</li>
+			<li>Easy integration with game engines and other middleware like physics engines due to non-intrusive API design</li>
+            <li>Suitable for Augmented Reality (AR) and stereo applications</li>
+        </ul>
+	
+		<h3>
+		    Scene and Resource Management</h3>
+        <ul>
+			<li>Robust resource management with internal garbage collection</li>
+	        <li>Interface for loading data from files, streams or any type of archives</li>
+	        <li>Hot-reloading of resources for more increased productivity during development</li>
+			<li>Lightweight scene tree structure with hierarchical transformations and bounding volumes</li>
+			<li>Unified scene system where world, models and skeletons are just scene graph branches and no special objects</li>
+			<li>Loading of scene graph branches from XML files with complete orthogonality to API functions</li>
+			<li>Frustum culling based on spatial graph</li>
+			<li>Hardware occlusion culling</li>
+			<li>Level of detail support for model geometry and materials</li>
+			<li>Possibility to attach scene nodes to joints (e.g. for character props)</li>
+			<li>Access to vertex data for collision detection and interoperability with physics engines</li>
+			<li>Ray collision queries and node picking</li>
+        </ul>
+
+	    <h3>
+	        Rendering</h3>
+	    <ul>
+	        <li>Übershader-based effect/material system with automatic shader permutation generation (using GLSL shaders)</li>
+			<li>XML based customizable rendering pipeline with allocatable render targets and commands for rapid testing of different rendering techniques</li>
+	        <li>Postprocessing framework for effects like bloom, DOF or motion blur</li>
+	        <li>Support for forward rendering and different deferred shading techniques</li>
+	        <li>Support for High Dynamic Range (HDR) textures and lighting</li>
+	        <li>Support for almost all modern rendering techniques, including normal-mapped phong lighting and parallax mapping</li>
+	        <li>Support for real-time reflections and other techniques that require several cameras for rendering</li>
+			<li>Realtime shadows using Parallel Split Shadow Maps (PSSM)</li>
+	        <li>Software skinning and hardware skinning in vertex shader for rendering hundreds of animated characters</li>
+	        <li>Fully integrated particle systems that can cast shadows and have effects like motion blur</li>
+	        <li>Overlays for rendering GUI elements and font</li>
+	    </ul>
+		
+		<h3>
+	        Animation</h3>
+	    <ul>
+	        <li>Unified low-level animation system working directly on scene graph</li>
+	        <li>Keyframe animation for joints and meshes</li>
+	        <li>Skeletal animation with up to 4 weights per vertex for articulated models</li>
+	        <li>Layered animation blending and mixing using masks and additive channels</li>
+	        <li>Inter-frame interpolation for smooth animations</li>
+	        <li>Access to joint data for dynamic animations and ragdoll physics</li>
+	        <li>Morph targets for facial animation and lip synchronization</li>
+	    </ul>
+		
+		<h3>
+	        Content Pipeline</h3>
+	    <ul>
+			<li>Custom optimized model and animation formats for maximum performance</li>
+			<li>Mixture of binary and XML formats for best tradeoff between performance and productivity</li>
+			<li>Support for DDS textures and other common image formats</li>
+			<li>Collada Converter for bringing assets from many common DCC tools to Horde3D</li>
+			<li>Collada Converter implemented as command line tool that can be integrated in automatic build process</li>
+			<li>Calculation of tangent space basis for normal mapping</li>
+			<li>Optimization of geometry for GPU post-transform vertex cache</li>
+			<li>Data-driven rendering pipelines for straight switching between different rendering techniques</li>
+			<br />
+			<li><b>Powerful editor for composing scenes and developing shaders and rendering techniques</b></li>
+	    </ul>
+		
+        <br /><br />
+	    
+	    <h2>
+	        Hardware requirements</h2>
+	    <p>Horde3D requires an OpenGL 2.0 compatible graphics card with support for floating point buffers like a GeForce 6 series card or Radeon 9500.</p>
+
+	    <div id="copy">Copyright &copy; 2006-2011 The Horde3D Team <a href="contact.html">contact</a></div>
+    </div>
+    
+    <div id="logo">
+        <img src="images/logo.jpg" alt="Horde3D" />
+    </div>
+    <div id="topnav">
+        <img src="images/topnav1.jpg" alt="Horde3D" /><a href="download.html"><img src="images/topnav2.jpg" alt="Horde3D" /></a><img
+            src="images/topnav3.jpg" alt="Horde3D" /><a href="docs/manual.html" target="_blank"><img src="images/topnav4.jpg" alt="Horde3D" /></a><img
+                src="images/topnav5.jpg" alt="Horde3D" />
+    </div>
+    <div id="mainimg">
+        <img src="images/mainimg_per.gif" alt="Horde3D" />
+    </div>
+    
+    
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-709589-2";
+        urchinTracker();
+    </script>
+    
+</body>
+</html>
